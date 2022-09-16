@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora média</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="page-title">
+      Calculadora de média</h1>
+      <p class="page-subtitle">
+      Descubra qual a sua média de nota de todas as provas!
+      </p>
+      <p class="event_name">Imersão_dev 2022</p>
+    
+    <h2>Digite seus dados:</h2>
+    
+     <label for="name">Nome:</label>
+     <input type="text" id="name"><br><br>
+     
+     <label for="b1">Nota do 1º Bimestre</label><br>
+     <input type="number" id="nota1bim" min="0" max = "10" step = "0.5" required/><br>
+      
+     <label for="b1">Nota do 2º Bimestre</label><br>
+     <input type="number" id="nota2bim" min="0" max = "10" step = "0.5" required/><br>
+      
+     <label for="b1">Nota do 3º Bimestre</label><br>
+     <input type="number" id="nota3bim" min="0" max = "10" step = "0.5" required/><br>
+      
+     <label for="b1">Nota do 4º Bimestre</label><br>
+     <input type="number" id="nota4bim" min="0" max = "10" step = "0.5" required/><br>
+      
+    <button type="submit" onclick="calculaMedia()">Confirmar</button>
+    <h2 id="mediaCalculada"></h2>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
